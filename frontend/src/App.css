@@ -1,0 +1,152 @@
+/* src/App.css */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h2 {
+  margin: 0;
+  color: #e6dfdf; /* Your text color */
+  flex-grow: 1; /* Allows title to take up remaining space */
+  text-align: center; /* Center the title */
+}
+
+.header-buttons {
+  margin-left: auto; /* Pushes the button to the right */
+}
+
+.header-buttons a {
+  text-decoration: none; /* Remove underline from Link */
+}
+
+.header-buttons .MuiButton-root {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons .MuiButton-root:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.App-nav {
+  background-color: #20232a;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 15px; /* Apply border-radius to the entire navbar */
+}
+
+.App-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around; /* Distribute links evenly */
+}
+
+.App-nav li {
+  flex: 1;
+  text-align: center; /* Center the text within each link */
+}
+
+.App-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px; /* Apply border-radius to the individual links */
+}
+
+.App-nav a:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.App-content {
+  padding: 0px;
+}
+
+.link-a {
+  margin: 5;
+  background-color: #333; /* Initial background color */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, background-image 0.5s ease-in-out, color 0.3s ease; /* Transition for color and image */
+}
+
+.link-b {
+  margin: 5;
+  background-color: #6b5b95;
+  /* border-radius: 10px; Apply border-radius to individual block B */
+}
+
+.link-c {
+  margin: 5;
+  background-color: #b04b7a;
+  border-top-left-radius: 100px; /* Apply border-radius to individual block C */
+  border-top-right-radius: 100px;
+}
+
+.link-a:hover {
+  background-color: #b881ff; /* Background color on hover */
+  background-image: url('./images/img1.jpg'); /* Image path */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.link-b:hover {
+  background-color: #b881ff; /* Background color on hover */
+  background-image: url('./images/img2.jpg'); /* Image path */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.link-c:hover {
+  background-color: #b881ff; /* Background color on hover */
+  background-image: url('./images/img3.jpg'); /* Image path */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .App-nav ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .App-nav a {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .App-nav a {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .App-header h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .link-a, .link-b, .link-c {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px; /* Adjust padding */
+  }
+}

@@ -1,0 +1,108 @@
+.page-c {
+  background-color: #efffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.page-c h2 {
+  color: #b04b7a;
+  font-size: 24px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 20px;
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, and base width */
+  max-width: 300px; /* Limit maximum width of each card */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  height: 180px;
+  width: 180px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #45a049;
+}
+
+.d1 {
+  background-color: #767575;
+}
+
+.d2 {
+  background-color: #aef9bc;
+}
+
+.d3 {
+  background-color: #c6cffb;
+}
+
+.d4 {
+  background-color: #9f2367;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .card {
+    flex: 1 1 300px; /* Adjust base width for medium screens */
+    max-width: 250px; /* Adjust maximum width for medium screens */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* Make cards full-width on small screens */
+    max-width: 100%; /* Ensure cards take full width */
+  }
+}

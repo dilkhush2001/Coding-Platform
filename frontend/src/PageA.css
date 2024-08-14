@@ -1,0 +1,81 @@
+.page-a {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #dae7e6;
+}
+
+.grid-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+/* Base grid item styles */
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Adjusted font size */
+  color: white;
+  padding: 20px;
+  height: 130px; /* Fixed height */
+  width: 100%; /* Full width of the grid cell */
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden; /* Prevents content from overflowing */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  text-overflow: ellipsis; /* Adds "..." if the text is too long to fit */
+}
+
+/* Specific background colors */
+.grid-item-1 {
+  background-color: #a19f9f; /* Red-Orange */
+}
+
+.grid-item-2 {
+  background-color: #aef9bc; /* Green */
+}
+
+.grid-item-3 {
+  background-color: #c6cffb; /* Blue */
+}
+
+.grid-item-4 {
+  background-color: #fccfe8; /* Pink */
+}
+
+.grid-item-5 {
+  background-color: #eddfac; /* Yellow */
+}
+
+.grid-item-6 {
+  background-color: #b0fbf7; /* Aqua */
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .grid-containers {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+
+  .grid-item {
+    font-size: 12px; /* Adjust font size */
+    height: 100px; /* Adjust height */
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .grid-containers {
+    grid-template-columns: 1fr; /* Single column */
+  }
+
+  .grid-item {
+    font-size: 10px; /* Adjust font size */
+    height: 80px; /* Adjust height */
+    padding: 15px; /* Adjust padding */
+  }
+}

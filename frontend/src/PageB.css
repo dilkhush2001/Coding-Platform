@@ -1,0 +1,84 @@
+.page-b {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 78vh;
+  display: flex;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.chip-containe {
+  display: flex;
+  flex-direction: row; /* Ensures chips and details are side by side */
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chips {
+  flex: 7; /* 70% width */
+  display: flex;
+  flex-wrap: wrap; /* Allows chips to wrap to the next line */
+  gap: 8px; /* Smaller gap between chips */
+  padding: 20px;
+  background-color: #d1e7dd; /* Background color for chip area */
+  box-sizing: border-box;
+  align-items: flex-start; /* Align chips to the top */
+}
+
+.chip-container .MuiChip-root {
+  font-size: 12px; /* Smaller font size for the chip text */
+  padding: 6px 10px; /* Decrease padding for smaller chips */
+  height: auto; /* Allow chip height to adjust */
+  border-radius: 16px; /* Rounded corners similar to tags */
+  background-color: #faf5f5; /* Background color similar to LeetCode tags */
+  color: #333; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.chip-container .MuiChip-root:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.chip-container .MuiChip-label {
+  padding: 0 8px; /* Adjust padding for the label inside the chip */
+}
+
+.details {
+  flex: 3; /* 30% width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d6f9fe; /* Background color for details area */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.details h2 {
+  margin: 0 0 20px;
+  font-size: 24px; /* Adjust font size for the heading */
+  color: #333; /* Text color for the heading */
+}
+
+.details button {
+  margin-top: 20px;
+  padding: 10px 20px; /* Adjust button padding */
+  font-size: 14px; /* Button font size */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .chip-containe {
+    flex-direction: column;
+  }
+
+  .chips, .details {
+    width: 100%;
+  }
+
+  .details {
+    margin-top: 20px;
+  }
+}

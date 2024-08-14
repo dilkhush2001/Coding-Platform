@@ -1,0 +1,72 @@
+.new-page {
+  padding: 20px;
+  background-color: aliceblue; /* Background color for the page */
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-row {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  width: 100%; /* Make sure each grid item takes up the full width */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  border-radius: 5%;
+  display: flex; /* Flexbox to align text and button */
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.row-light {
+  background-color: #f9f9f9;
+}
+
+.row-dark {
+  background-color: #e0e0e0;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Slightly smaller font size */
+}
+
+.green-button:hover {
+  background-color: darkgreen;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .grid-row {
+    font-size: 16px; /* Adjust font size for medium screens */
+    padding: 8px; /* Adjust padding for medium screens */
+  }
+
+  .green-button {
+    padding: 8px 20px; /* Adjust button padding for medium screens */
+    font-size: 14px; /* Adjust font size for medium screens */
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .grid-row {
+    font-size: 14px; /* Adjust font size for small screens */
+    padding: 6px; /* Adjust padding for small screens */
+  }
+
+  .green-button {
+    padding: 6px 15px; /* Adjust button padding for small screens */
+    font-size: 12px; /* Adjust font size for small screens */
+  }
+}
